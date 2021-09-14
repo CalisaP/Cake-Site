@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    font: normal 16px Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+  header{
+      top:0;
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+      background-color: #303030;
+  }
+  header h1{
+      color: white;
+      margin: 0;
+      font-weight: lighter;
+  }
+
+  .header-container{
+       /* Limits width for large screens (fmrly 960px) */
+    width: 1250px;
+    max-width: 95%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    /* Flexbox layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav{
+    width: 65%;
+    margin: 0;  
+  }
+  
+  nav ul{
+    list-style: none;
+    width: 100%;
+    padding: 0 1rem 0 0;
+    /* Flexbox layout */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  nav ul li{
+    display: inline;
+    color: rgb(153, 150, 150);
+    font-weight: lighter;
+    transition: 1s; /* Controls fade-in: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1 */
+  }
+  nav ul li:hover{
+      color: white;
+  }
+
