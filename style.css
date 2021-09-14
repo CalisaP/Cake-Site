@@ -1,60 +1,77 @@
 html {
-    scroll-behavior: smooth;
-  }
-body{
-    margin: 0;
-    font: normal 16px Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  scroll-behavior: smooth;
 }
-  header{
-      top:0;
-      width: 100%;
-      position: fixed;
-      z-index: 10;
-      background-color: #303030;
-  }
-  header h1{
-      color: white;
-      margin: 0;
-      font-weight: lighter;
-  }
+body{
+  margin: 0;
+  font: normal 16px Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+header{
+  top:0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #303030;
+}
+header p{
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: .4em;
+}
+.header-container{
+  /* Limits width for large screens (fmrly 960px) */
+  width: 1250px;
+  max-width: 95%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  /* Flexbox layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav{
+  width: 65%;
+  margin: 0;  
+}
+nav ul{
+  list-style: none;
+  width: 100%;
+  padding: 0 1rem 0 0;
+  /* Flexbox layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline;
+  color: rgb(153, 150, 150);
+  font-weight: lighter;
+  transition: 1s; /* Controls fade-in: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1 */
+}
+nav ul li:hover{
+    color: white;
+}
 
-  .header-container{
-       /* Limits width for large screens (fmrly 960px) */
-    width: 1250px;
-    max-width: 95%;
-    padding: 0 1rem;
-    margin: 0 auto;
-    /* Flexbox layout */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+.banner{
+  position: relative;
+  height: 100vh
+}
+.banner figure img{
+  position: absolute;
+  z-index: 9;
+  width: 50%;
+  padding: 20px;
+  margin: 10rem 20rem;
+}
+.banner video{
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 8;
+}
 
-  nav{
-    width: 65%;
-    margin: 0;  
-  }
-  
-  nav ul{
-    list-style: none;
-    width: 100%;
-    padding: 0 1rem 0 0;
-    /* Flexbox layout */
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-  }
-
-  nav ul li{
-    display: inline;
-    color: rgb(153, 150, 150);
-    font-weight: lighter;
-    transition: 1s; /* Controls fade-in: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1 */
-  }
-  nav ul li:hover{
-      color: white;
-  }
-
+.cake-types{
+  padding: 3rem;
+}
