@@ -75,3 +75,20 @@ nav ul li:hover{
 .cake-types{
   padding: 3rem;
 }
+.cake-types h2, .cake-types p{
+  text-align: center;
+}
+.cake-types .cakes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cake-types .cakes figure img{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0px -1px 1px rgba(255,255,255,1),2px -1px 4px rgba(0,0,0,0.3);
+  transition: transform 2s, filter 1.5s ease-in-out;
+}
+.cake-types .cakes figure img:hover{
+  filter: brightness(70%);
+}
