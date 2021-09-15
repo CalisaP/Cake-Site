@@ -18,6 +18,9 @@ header p{
   font-weight: lighter;
   letter-spacing: .4em;
 }
+header a{
+  text-decoration: none;
+}
 .header-container{
   /* Limits width for large screens (fmrly 960px) */
   width: 1250px;
@@ -112,3 +115,12 @@ nav ul li:hover{
   width: 100%;
   top: 35%;
 }
+.cake-types .cakes figure p{
+  color: #e19b9f;
+  font-weight: bold;
+}
+
+.cake-types .cakes figure p:hover{
+  color: rgb(194, 192, 192);
+}
+
