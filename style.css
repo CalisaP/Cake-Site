@@ -53,6 +53,9 @@ nav ul li{
 nav ul li:hover{
     color: white;
 }
+.smaller{
+  font-size: 16px;
+}
 
 .banner{
   position: relative;
@@ -74,27 +77,30 @@ nav ul li:hover{
 
 .cake-types{
   padding: 3rem;
+  height: 100vh;
 }
 .cake-types h2, .cake-types p{
   text-align: center;
 }
 .cake-types .cakes{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .cake-types .cakes figure{
   /* For overlapping text and image via W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center */
   position: relative;
+  
 }
 .cake-types .cakes figure img{
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: inset 0px -1px 1px rgba(255,255,255,1),2px -1px 4px rgba(0,0,0,0.3);
   transition: transform 2s, filter 1.5s ease-in-out;
 }
 .cake-types .cakes figure img:hover{
-  filter: brightness(70%);
+  filter: brightness(70%); /* Inspired by https://w3bits.com/css-image-hover-zoom/ */
 }
 .cake-types .cakes figure figcaption{
   font-size: 30px;
@@ -104,5 +110,5 @@ nav ul li:hover{
   z-index: 8;
   text-align: center;
   width: 100%;
-  top: 45%;
+  top: 35%;
 }
