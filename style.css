@@ -61,10 +61,12 @@ nav ul li:hover{
 }
 
 .banner{
+  /* For overlapping text and image via W3Schools: https://www.w3schools.com/css/css_positioning.asp*/
   position: relative;
   height: 100vh
 }
 .banner figure img{
+  /* For overlapping text and image */
   position: absolute;
   z-index: 9;
   width: 50%;
@@ -72,6 +74,7 @@ nav ul li:hover{
   margin: 10rem 20rem;
 }
 .banner video{
+  /* For overlapping text and image */
   position: absolute;
   width: 100vw;
   top: 0;
