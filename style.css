@@ -83,6 +83,10 @@ nav ul li:hover{
   justify-content: center;
   align-items: center;
 }
+.cake-types .cakes figure{
+  /* For overlapping text and image via W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center */
+  position: relative;
+}
 .cake-types .cakes figure img{
   width: 100%;
   border-radius: 5px;
@@ -91,4 +95,14 @@ nav ul li:hover{
 }
 .cake-types .cakes figure img:hover{
   filter: brightness(70%);
+}
+.cake-types .cakes figure figcaption{
+  font-size: 30px;
+  color: #ffffff;
+  /* For overlapping text and image */
+  position: absolute;
+  z-index: 8;
+  text-align: center;
+  width: 100%;
+  top: 45%;
 }
