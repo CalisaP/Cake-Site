@@ -3,7 +3,15 @@ html {
 }
 body{
   margin: 0;
-  font: normal 16px Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font: normal 16px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background: url('images/index/cake-layers.jpeg') center fixed;
+}
+.container{ /* For footer placement */
+  position: relative;
+  min-height: 100vh;
+}
+main{ /* For footer placement */
+  padding-bottom: 10rem; /* Same as footer height */
 }
 header{
   top:0;
@@ -52,12 +60,55 @@ nav ul li{
   color: rgb(153, 150, 150);
   font-weight: lighter;
   transition: 1s; /* Controls fade-in: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1 */
+  letter-spacing: .1em;
+
 }
 nav ul li:hover{
     color: white;
 }
+/* General Styling */
+
+h2{
+  letter-spacing: .04em;
+}.center{
+  text-align: center;
+}
 .smaller{
   font-size: 16px;
+}
+.pink{
+  color: #e19b9f;
+}
+.button {
+  background-color: #e19b9f; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: .1em;
+}
+.button1 {
+  background: none; 
+  color: #e19b9f; 
+  border: 2px solid #e19b9f;
+}
+
+.button1:hover {
+  background-color: #e19b9f;
+  color: white;
+}
+.button-placement{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
 }
 
 .banner{
@@ -84,9 +135,7 @@ nav ul li:hover{
 .cake-types{
   padding: 3rem;
   height: 100vh;
-}
-.cake-types h2, .cake-types p{
-  text-align: center;
+  background-color: #ffffff;
 }
 .cake-types .cakes{
   display: flex;
@@ -97,7 +146,6 @@ nav ul li:hover{
 .cake-types .cakes figure{
   /* For overlapping text and image via W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center */
   position: relative;
-  
 }
 .cake-types .cakes figure img{
   width: 100%;
@@ -114,16 +162,93 @@ nav ul li:hover{
   /* For overlapping text and image */
   position: absolute;
   z-index: 8;
-  text-align: center;
   width: 100%;
   top: 35%;
 }
-.cake-types .cakes figure p{
-  color: #e19b9f;
+.cake-types .cakes figure .pink{
   font-weight: bold;
 }
-
 .cake-types .cakes figure p:hover{
   color: rgb(194, 192, 192);
 }
 
+.yummy{
+  height: 100vh;
+}
+.yummy h2{
+  font-size: 3em;
+  margin-top: 8rem;
+  font-weight: lighter;
+}
+.yummy p{
+  font-size: 1.5em;
+}
+
+.order{
+  background: linear-gradient(180deg,#ffffff 0%,#dbdada 100%); 
+  height: 100vh;
+}
+.order figure{
+  padding: 3rem 0 1rem 0;
+}
+.order h2{
+  font-size: 3em;
+  font-weight: lighter;
+}
+.order .steps{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.order .steps p:nth-of-type(1){
+  font-size: 1.5em;
+}
+.order .steps p:nth-of-type(2){
+  padding-left: 2.5rem;
+}
+.order .button{
+  margin: 3rem 0;
+}
+
+footer{
+  background-color: #8d6669;
+  color: #ffffff;
+  font-size: 12px;
+
+  /* Placement: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+}
+.footer-hover:hover{
+  color: #e19b9f;
+}
+footer .top-row{
+  display: flex;
+  justify-content: space-around;
+}
+footer .top-row .left{
+  letter-spacing: .2em;
+}
+footer .top-row .left p:nth-of-type(1){
+  font-size: 14px;
+  letter-spacing: .3em;
+}
+footer .top-row .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  letter-spacing: .2em;
+}
+footer .top-row .right #contact figure{
+  margin: 0;
+}
+footer .top-row .right #contact figure img{
+  padding-right: .5rem;
+}
+footer .bottom-row{
+  padding: 0 3rem;
+}
