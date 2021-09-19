@@ -168,6 +168,9 @@ h2{
 .cake-types .cakes figure .pink{
   font-weight: bold;
 }
+.cake-types .cakes figure p{
+  color: #e19b9f;
+}
 .cake-types .cakes figure p:hover{
   color: rgb(194, 192, 192);
 }
