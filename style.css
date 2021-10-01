@@ -114,7 +114,7 @@ h2{
 .banner{
   /* For overlapping text and image via W3Schools: https://www.w3schools.com/css/css_positioning.asp*/
   position: relative;
-  height: 100vh
+  height: 100vh;
 }
 .banner figure img{
   /* For overlapping text and image */
