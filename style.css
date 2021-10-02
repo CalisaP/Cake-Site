@@ -127,7 +127,7 @@ h2{
 }
 .banner video{
   width: 100vw;
-  height: auto
+  height: auto;
   top: 0;
   z-index: 8;
 }
