@@ -5,6 +5,8 @@ body{
   margin: 0;
   font: normal 16px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   background: url('images/index/cake-layers.jpeg') center fixed;
+  background-size: cover
+
 }
 
 header{
@@ -70,7 +72,7 @@ main{
   padding-bottom: 10rem; /* Same as footer height */
 
   display: grid;
-  grid-template-rows: auto auto 100vh auto;
+  grid-template-rows: auto auto 100vh 100vh;
   grid-template-columns: 100%;
   gap: 0px;
 }
@@ -153,9 +155,10 @@ h2{
   border-radius: 10px;
   box-shadow: inset 0px -1px 1px rgba(255,255,255,1),2px -1px 4px rgba(0,0,0,0.3);
   transition: transform 2s, filter 1.5s ease-in-out;
+  filter: brightness(70%);
 }
 .cake-types .cakes figure img:hover{
-  filter: brightness(70%); /* Inspired by https://w3bits.com/css-image-hover-zoom/ */
+  filter: brightness(100%); /* Inspired by https://w3bits.com/css-image-hover-zoom/ */
 }
 .cake-types .cakes figure figcaption{
   font-size: 30px;
@@ -255,3 +258,94 @@ footer .top-row .right #contact figure img{
 footer .bottom-row{
   padding: 0 3rem;
 }
+
+/* Responsive Sizing */
+@media (max-width: 425px){
+  main{
+    grid-template-rows: auto auto 100vh auto;
+  }
+}
+
+@media (min-width: 1920px){
+  main{
+    grid-template-rows: auto 100vh 100vh 100vh;
+  }
+  .cake-types h2{
+    padding-top: 0rem;
+    font-size: 40px;
+  }
+  .cake-types p{
+    font-size: 20px;
+  }
+  .order figure{
+    padding: 8rem 0 1rem 0;
+  }
+  .order .steps p{
+    font-size: 20px;
+  }
+  .order .steps p:nth-of-type(1){
+    font-size: 1.8em;
+  }
+  .order .steps p:nth-of-type(2){
+    padding-left: 3rem;
+  }
+  footer{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 2560px){
+  main{
+    grid-template-rows: auto 100vh 100vh 100vh;
+    padding-bottom: 13rem; /* Same as footer height */
+  }
+  .button{
+    font-size: 30px;
+    padding: 18px 20px;
+  }
+  .cake-types h2{
+    padding-top: 1rem;
+    font-size: 4em;
+  }
+  .cake-types p{
+    font-size: 2rem;
+  }
+  .yummy h2{
+    font-size: 4em;
+    margin-top: 10rem;
+    font-weight: lighter;
+  }
+  .yummy p{
+    font-size: 2.5em;
+  }
+  .order figure{
+    padding: 15rem 0 1rem 0;
+  }
+  .order h2{
+    font-size: 4em;
+  }
+  .order .steps p{
+    font-size: 25px;
+  }
+  .order .steps p:nth-of-type(1){
+    font-size: 2.3em;
+  }
+  .order .steps p:nth-of-type(2){
+    padding-left: 4rem;
+  }
+  footer{
+    font-size: 18px;
+
+    /* Placement: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 13rem;
+  }
+  footer .top-row .left p:nth-of-type(1){
+    font-size: 20px;
+    letter-spacing: .3em;
+  }  
+}
+
+
