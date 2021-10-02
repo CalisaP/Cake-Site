@@ -85,7 +85,7 @@ h2{
   text-align: center;
 }
 .smaller{
-  font-size: 16px;
+  font-size: .65em;
 }
 .pink{
   color: #e19b9f;
@@ -98,7 +98,7 @@ h2{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: lighter;
   margin: 4px 2px;
   transition-duration: 0.4s;
@@ -161,7 +161,7 @@ h2{
   filter: brightness(100%); /* Inspired by https://w3bits.com/css-image-hover-zoom/ */
 }
 .cake-types .cakes figure figcaption{
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #ffffff;
   /* For overlapping text and image */
   position: absolute;
@@ -264,6 +264,15 @@ footer .bottom-row{
   main{
     grid-template-rows: auto auto 100vh auto;
   }
+}
+
+@media (max-width: 1024){
+  .order .steps{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }  
 }
 
 @media (min-width: 1920px){
