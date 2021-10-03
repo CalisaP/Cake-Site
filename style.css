@@ -543,6 +543,7 @@ footer .bottom-row{
     margin: 0;
     padding-top: .5rem;
   }
+  /* Hamburger menu design based on: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
   header .header-container nav .menu{
     top: 1rem;
     margin-right: 0;
