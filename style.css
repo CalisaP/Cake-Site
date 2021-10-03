@@ -259,6 +259,7 @@ footer .bottom-row{
   padding: 0 3rem;
 }
 
+
 /* Responsive Sizing */
 @media (min-width: 2560px){
   header .header-container {
@@ -278,6 +279,9 @@ footer .bottom-row{
   .button{
     font-size: 2em;
     padding: 1rem 2rem;
+  }
+  .banner video{
+    width: 100vw;
   }
   .cake-types h2{
     padding-top: 1rem;
@@ -323,9 +327,9 @@ footer .bottom-row{
   }  
 }
 
-@media (min-width: 1920px){
+@media (max-width: 1920px){
   header .header-container {
-    width: 1500px;
+    width: 1550px;
   }
   header .header-container p{
     font-size: 1.4em;
@@ -336,6 +340,9 @@ footer .bottom-row{
   }
   main{
     grid-template-rows: auto 100vh 100vh 100vh;
+  }
+  .banner video{
+    width: 99.2vw;
   }
   .cake-types h2{
     padding-top: 0rem;
@@ -357,6 +364,7 @@ footer .bottom-row{
     padding-left: 3rem;
   }
   footer{
+    width: 100%;
     font-size: .9em;
   }
   footer .top-row .left p:nth-of-type(1){
@@ -365,7 +373,49 @@ footer .bottom-row{
   }  
 }
 
+@media (max-width: 1440px){
+  header .header-container {
+    width: 1200px;
+  }
+  header .header-container p{
+    font-size: 1.3em;
+    letter-spacing: .4em;
+  }
+  header .header-container nav ul li{
+    font-size: 1.2em;
+  }
+  .banner video{
+    width: 100vw;
+  }
+  .cake-types h2{
+    font-size: 1.9em;
+    margin-top: 0;
+  }
+  .cake-types h2:nth-of-type(2){
+    margin-top: .8em;
+  }
+  .order h2{
+    font-size: 2.5em;
+  }
+  .order .steps p{
+    font-size: 1.1em;
+  }
+  .order .steps p:nth-of-type(1){
+    font-size: 1.7em;
+  }
+}
+
 @media (max-width: 1024px){
+  header .header-container {
+    width: 920px;
+  }
+  header .header-container p{
+    font-size: 1.1em;
+    letter-spacing: .4em;
+  }
+  header .header-container nav ul li{
+    font-size: 1em;
+  }
   main{
     grid-template-rows: auto auto 100vh auto;
   }
@@ -378,6 +428,7 @@ footer .bottom-row{
   }
   .order .steps div{
     width: 40%;
+    margin-left: 0rem;
   }
   footer .top-row{
     flex-wrap: wrap;
@@ -389,8 +440,26 @@ footer .bottom-row{
 }
 
 @media (max-width: 768px){
+  main{
+    padding-bottom: 8.5rem; /* Same as footer height */
+  }
+  .order .steps div{
+    width: 70%;
+  }
+  footer{
+    width: 100%;
+    font-size: .9em;
+    height: 8.5rem;
+  }
   footer .top-row{
     flex-wrap: nowrap;
+  }
+  footer .top-row .left p:nth-of-type(1){
+    font-size: 1em;
+    letter-spacing: .4em;
+  }  
+  footer .top-row .left, footer .top-row .right, footer .bottom-row{
+    font-size: .8em;
   }
   footer .top-row .right{
     width: 70%;
@@ -403,38 +472,82 @@ footer .bottom-row{
     padding-top: .5rem;
   }
   main{
-    padding-bottom: 16.5rem; /* Same as footer height */
+    padding-bottom: 28rem; /* Same as footer height */
   }
   .order .steps div{
     width: 80%;
   }
   footer{
-    height: 16.5rem;
+    height: 28rem;
     width: 100%;
     padding-left: 0;
   }
   footer .top-row{
     flex-flow: column wrap;
-    justify-content: center safe;
-    align-items: center safe;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     padding: 0;
-    margin: 0;
+    margin-left: 1rem;
   }
-  footer .top-row .left{
+  footer .top-row .left, footer .top-row .right{
     width: 100%;
-    background-color: cornflowerblue;
-    margin: inherit;
   }
   footer .top-row .right{
-    width: 100%;
-    background-color: cyan;
-    margin: inherit;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
+
   }
   footer .bottom-row{
-    background-color: brown;
-    width: 50%;
-    margin: inherit;
+    width: 70%;
+  }
+}
+
+@media (max-width: 375px){
+  main{
+    padding-bottom: 29rem; /* Same as footer height */
+  }
+  .cake-types h2{
+    padding-top: 0rem;
+    font-size: 1.8em;
+  }
+  .cake-types p{
+    font-size: 1.1em;
+  }
+  .cake-types .cakes figure figcaption{
+    font-size: 1.5em;
+  }
+  .yummy h2{
+    font-size: 1.9em;
+    margin-top: 10rem;
+    font-weight: bold;
+  }
+  .yummy p{
+    font-size: 1.4em;
+  }
+  .order h2{
+    font-size: 2em;
+  }
+  .order .steps p{
+    font-size: 1em;
+  }
+  .order .steps p:nth-of-type(1){
+    font-size: 1.4em;
+  }
+  footer{
+    height: 29rem;
+  }
+  footer .top-row .left, footer .top-row .right{
+    width: 90%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px){
+  .cake-types .cakes figure figcaption{
+    font-size: 1.1em;
   }
 }
 
