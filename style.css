@@ -260,64 +260,6 @@ footer .bottom-row{
 }
 
 /* Responsive Sizing */
-@media (max-width: 425px){
-  main{
-    grid-template-rows: auto auto 100vh auto;
-  }
-}
-
-@media (max-width: 1024){
-  .order .steps{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }  
-}
-
-@media (min-width: 1920px){
-  header .header-container {
-    width: 1500px;
-  }
-  header .header-container p{
-    font-size: 1.4em;
-    letter-spacing: .4em;
-  }
-  header .header-container nav ul li{
-    font-size: 1.3em;
-  }
-  main{
-    grid-template-rows: auto 100vh 100vh 100vh;
-  }
-  .cake-types h2{
-    padding-top: 0rem;
-    font-size: 2.4em;
-  }
-  .cake-types p{
-    font-size: 1.3em;
-  }
-  .order figure{
-    padding: 8rem 0 1rem 0;
-  }
-  .order .steps p{
-    font-size: 1.3em;
-  }
-  .order .steps p:nth-of-type(1){
-    font-size: 1.9em;
-  }
-  .order .steps p:nth-of-type(2){
-    padding-left: 3rem;
-  }
-  footer{
-    font-size: .9em;
-  }
-  footer .top-row .left p:nth-of-type(1){
-    font-size: 1.2em;
-    letter-spacing: .4em;
-  }  
-
-}
-
 @media (min-width: 2560px){
   header .header-container {
     width: 2000px;
@@ -369,7 +311,6 @@ footer .bottom-row{
   }
   footer{
     font-size: 1.2em;
-
     /* Placement: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
     position: absolute;
     bottom: 0;
@@ -382,4 +323,118 @@ footer .bottom-row{
   }  
 }
 
+@media (min-width: 1920px){
+  header .header-container {
+    width: 1500px;
+  }
+  header .header-container p{
+    font-size: 1.4em;
+    letter-spacing: .4em;
+  }
+  header .header-container nav ul li{
+    font-size: 1.3em;
+  }
+  main{
+    grid-template-rows: auto 100vh 100vh 100vh;
+  }
+  .cake-types h2{
+    padding-top: 0rem;
+    font-size: 2.4em;
+  }
+  .cake-types p{
+    font-size: 1.3em;
+  }
+  .order figure{
+    padding: 8rem 0 1rem 0;
+  }
+  .order .steps p{
+    font-size: 1.3em;
+  }
+  .order .steps p:nth-of-type(1){
+    font-size: 1.9em;
+  }
+  .order .steps p:nth-of-type(2){
+    padding-left: 3rem;
+  }
+  footer{
+    font-size: .9em;
+  }
+  footer .top-row .left p:nth-of-type(1){
+    font-size: 1.2em;
+    letter-spacing: .4em;
+  }  
+}
+
+@media (max-width: 1024px){
+  main{
+    grid-template-rows: auto auto 100vh auto;
+  }
+  .order .steps{
+    flex-flow: column ;
+    justify-content: center;
+  }  
+  .order .steps p:nth-of-type(2){
+    padding-left: 2.5rem;
+  }
+  .order .steps div{
+    width: 40%;
+  }
+  footer .top-row{
+    flex-wrap: wrap;
+    padding: 0rem 3rem;
+  }
+  footer .top-row .left{
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px){
+  footer .top-row{
+    flex-wrap: nowrap;
+  }
+  footer .top-row .right{
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px){
+  header{
+    margin: 0;
+    padding-top: .5rem;
+  }
+  main{
+    padding-bottom: 16.5rem; /* Same as footer height */
+  }
+  .order .steps div{
+    width: 80%;
+  }
+  footer{
+    height: 16.5rem;
+    width: 100%;
+    padding-left: 0;
+  }
+  footer .top-row{
+    flex-flow: column wrap;
+    justify-content: center safe;
+    align-items: center safe;
+    width: 95%;
+    padding: 0;
+    margin: 0;
+  }
+  footer .top-row .left{
+    width: 100%;
+    background-color: cornflowerblue;
+    margin: inherit;
+  }
+  footer .top-row .right{
+    width: 100%;
+    background-color: cyan;
+    margin: inherit;
+  }
+  footer .bottom-row{
+    background-color: brown;
+    width: 50%;
+    margin: inherit;
+  }
+}
 
