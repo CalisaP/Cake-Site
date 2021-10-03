@@ -41,7 +41,7 @@ header .header-container nav{
   width: 65%;
   margin: 0;  
 }
-header .header-container nav ul{
+header .header-container nav .navbar{
   list-style: none;
   width: 100%;
   padding: 0 1rem 0 0;
@@ -51,16 +51,21 @@ header .header-container nav ul{
   align-items: flex-end;
   flex-wrap: wrap;
 }
-header .header-container nav ul li{
+header .header-container nav .navbar li{
   display: inline;
+}
+header .header-container nav .navbar li a{
+  text-decoration: none;
   color: rgb(153, 150, 150);
   font-weight: lighter;
   transition: 1s; /* Controls fade-in: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1 */
   letter-spacing: .1em;
-
 }
-header .header-container nav ul li:hover{
+header .header-container nav .navbar li a:hover{
     color: white;
+}
+header .menu, .hamburger{
+  display: none;
 }
 
 .container{ /* For footer placement */
@@ -281,7 +286,7 @@ footer .bottom-row{
     padding: 1rem 2rem;
   }
   .banner video{
-    width: 100vw;
+    width: 100%;
   }
   .cake-types h2{
     padding-top: 1rem;
@@ -440,11 +445,78 @@ footer .bottom-row{
 }
 
 @media (max-width: 768px){
+  header{
+    height: 2.4rem;
+    margin-right: 0;
+    width: 100%;
+  }
+  header .header-container{
+    width: 600px;
+  }
+  header .header-container p{
+    padding-top: .5rem;
+  }
+  header .header-container nav .navbar{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .header-container nav .menu{
+    display: block;
+    position: fixed;
+    transform: translateY(-105%);
+    transition: transform 0.2s;
+    top: .8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: inherit;
+    background: #303030fd;
+    color: white;
+    list-style: none;
+  }
+  header .header-container nav .showMenu{
+    transform: translateY(0);
+  }
+  header .header-container nav .menu li{
+    padding-top: 1rem;
+  }
+  header .header-container nav .menu .menuItem{
+    text-decoration: none;
+    color: rgb(153, 150, 150);  
+  }
+  header .header-container nav .menu .menuItem:hover{
+    color: white;
+  }
+  header .header-container nav .hamburger{
+    display: block;
+    position: fixed;
+    z-index: inherit;
+    top: .4rem;
+    right: 3rem;
+    padding: 0;
+    margin: 0;
+    border: #303030 solid 1px;
+    background: #303030;
+    color: white;
+    cursor: pointer; 
+  }
+  header .header-container nav .hamburger .closeIcon{
+    display: none;
+    margin: 0;
+  }
+  
+  header .header-container nav ul li a{
+    color: rgb(153, 150, 150);
+  }
   main{
     padding-bottom: 8.5rem; /* Same as footer height */
   }
   .order .steps div{
     width: 70%;
+  }
+  .banner{
+    margin-top: 2.4rem;
   }
   footer{
     width: 100%;
@@ -470,6 +542,14 @@ footer .bottom-row{
   header{
     margin: 0;
     padding-top: .5rem;
+  }
+  header .header-container nav .menu{
+    top: 1rem;
+    margin-right: 0;
+  }
+  header .header-container nav .hamburger{
+    right: 2rem;
+    margin-right: 0;
   }
   main{
     padding-bottom: 28rem; /* Same as footer height */
