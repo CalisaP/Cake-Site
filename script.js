@@ -32,11 +32,11 @@ window .onload = function(){
         var  currentScrollPos = window.pageYOffset;
         if (prevScrollPos > currentScrollPos){
             document.getElementById("header").style.top = "0";
-            document.getElementById("hamburgerMenu").style.top = ".4rem";
+            hamburger.style.top = ".4rem";
 
         } else {
             document.getElementById("header").style.top = "-60px";
-            document.getElementById("hamburgerMenu").style.top = "-60px";
+            hamburger.style.top = "-60px";
         }
         prevScrollPos = currentScrollPos;
     }
