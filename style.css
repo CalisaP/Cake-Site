@@ -68,6 +68,10 @@ header .header-container nav .navbar li a:hover{
 header .menu, .hamburger{
   display: none;
 }
+header .hamburger .cake-figure{
+  padding: 0;
+  margin: 0;
+}
 
 .container{ /* For footer placement */
   position: relative;
