@@ -172,7 +172,8 @@ h2{
   position: absolute;
   z-index: 8;
   width: 100%;
-  top: 35%;
+  top: 30%;
+  padding: 0;
 }
 .cake-types .cakes figure .pink{
   font-weight: bold;
@@ -551,15 +552,16 @@ footer .bottom-row{
   header .header-container nav .hamburger{
     right: 2rem;
     margin-right: 0;
+    margin-top: .3rem;
   }
   main{
-    padding-bottom: 28rem; /* Same as footer height */
+    padding-bottom: 6.5rem; /* Same as footer height */
   }
   .order .steps div{
     width: 80%;
   }
   footer{
-    height: 28rem;
+    height: 6.5rem;
     width: 100%;
     padding-left: 0;
   }
@@ -576,11 +578,7 @@ footer .bottom-row{
     width: 100%;
   }
   footer .top-row .right{
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 1rem;
-    width: 90%;
+    display: none;
   }
   footer .bottom-row{
     width: 70%;
@@ -589,7 +587,7 @@ footer .bottom-row{
 
 @media (max-width: 375px){
   main{
-    padding-bottom: 29rem; /* Same as footer height */
+    padding-bottom: 7rem; /* Same as footer height */
   }
   .cake-types h2{
     padding-top: 0rem;
@@ -619,7 +617,7 @@ footer .bottom-row{
     font-size: 1.4em;
   }
   footer{
-    height: 29rem;
+    height: 7rem;
   }
   footer .top-row .left, footer .top-row .right{
     width: 90%;
