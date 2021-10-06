@@ -462,6 +462,7 @@ footer .bottom-row{
     padding: 0;
   }
   header .header-container nav .menu{
+    /* Hamburger menu design based on: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
     display: block;
     position: fixed;
     transform: translateY(-105%);
@@ -543,7 +544,6 @@ footer .bottom-row{
     margin: 0;
     padding-top: .5rem;
   }
-  /* Hamburger menu design based on: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
   header .header-container nav .menu{
     top: 1rem;
     margin-right: 0;
@@ -570,6 +570,7 @@ footer .bottom-row{
     width: 95%;
     padding: 0;
     margin-left: 1rem;
+    margin-right: 0;
   }
   footer .top-row .left, footer .top-row .right{
     width: 100%;
@@ -579,7 +580,7 @@ footer .bottom-row{
     justify-content: center;
     align-items: flex-start;
     margin-left: 1rem;
-
+    width: 90%;
   }
   footer .bottom-row{
     width: 70%;
