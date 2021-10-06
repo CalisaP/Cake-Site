@@ -555,13 +555,13 @@ footer .bottom-row{
     margin-top: .3rem;
   }
   main{
-    padding-bottom: 6.5rem; /* Same as footer height */
+    padding-bottom: 7.5rem; /* Same as footer height */
   }
   .order .steps div{
     width: 80%;
   }
   footer{
-    height: 6.5rem;
+    height: 7.5rem;
     width: 100%;
     padding-left: 0;
   }
@@ -569,15 +569,18 @@ footer .bottom-row{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 95%;
     padding: 0;
-    margin-left: 1rem;
     margin-right: 0;
   }
   footer .top-row .left, footer .top-row .right{
     width: 100%;
   }
-  footer .top-row .right{
+  footer .top-row .right figure{
+    padding-left: 9rem;
+  }
+  footer .top-row .right #cakes, #learn, #about, #contact p{
     display: none;
   }
   footer .bottom-row{
@@ -587,7 +590,7 @@ footer .bottom-row{
 
 @media (max-width: 375px){
   main{
-    padding-bottom: 7rem; /* Same as footer height */
+    padding-bottom: 8.5rem; /* Same as footer height */
   }
   .cake-types h2{
     padding-top: 0rem;
@@ -617,17 +620,24 @@ footer .bottom-row{
     font-size: 1.4em;
   }
   footer{
-    height: 7rem;
+    height: 8.5rem;
   }
   footer .top-row .left, footer .top-row .right{
     width: 90%;
     margin: 0;
   }
+  footer .top-row .right figure{
+    padding-left: 6rem;
+  }
+
 }
 
 @media (max-width: 320px){
   .cake-types .cakes figure figcaption{
     font-size: 1.1em;
+  }
+  footer .top-row .right figure{
+    padding-left: 5rem;
   }
 }
 
