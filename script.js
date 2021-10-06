@@ -42,7 +42,6 @@ window.onload = function(){
         if (prevScrollPos > currentScrollPos){ // If the previous position is less than the current position (if you're scrolling up)...
             document.getElementById("header").style.top = "0"; //... show the header,
             hamburger.style.top = ".4rem"; // show the hamburger menu.
-
         } else { // Otherwise, if you're scrolling down...
             document.getElementById("header").style.top = "-60px"; //... hide the header
             hamburger.style.top = "-60px"; // ... hide the hamburger menu
