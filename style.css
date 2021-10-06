@@ -484,8 +484,8 @@ footer .bottom-row{
     /* Hamburger menu design based on: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
     display: block;
     position: fixed;
-    transform: translateY(-105%);
-    transition: transform 0.2s;
+    transform: translate(105%, -100%);
+    transition: transform 0.4s;
     top: .8rem;
     left: 0;
     right: 0;
@@ -494,9 +494,14 @@ footer .bottom-row{
     background: #303030fd;
     color: white;
     list-style: none;
+    height: 100vh;
+  }
+  header .header-container nav .menu li {
+    margin-top: 1.5rem;
+    font-size: 1.5em;
   }
   header .header-container nav .showMenu{
-    transform: translateY(0);
+    transform: translate(0);
   }
   header .header-container nav .menu li{
     padding-top: 1rem;
