@@ -141,10 +141,14 @@ h2{
 }
 .js-scroll{
   opacity: 0;
-  transition: opacity 3s;
+  /* For the fade-in */
+  transition: opacity 3s, transform 3s ease-in-out;
 }
 .scrolled{
+  /* For the fade-in */
   opacity: 1;
+  /* For the drop-in */
+  transform: translate(0, 10rem)
 }
 
 /* Cake Types */
@@ -196,11 +200,13 @@ h2{
 /* Yummy Section */
 .yummy h2{
   font-size: 3em;
-  margin-top: 8rem;
   font-weight: lighter;
+  margin-top: 5rem;
+  text-shadow: 2px 2px #30303077;
 }
 .yummy p{
   font-size: 1.5em;
+  text-shadow: 2px 2px #30303077;
 }
 
 /* Order Section */

@@ -68,15 +68,11 @@ window.onload = function(){
     // Assigns the .scrolled class element.
     const displayScrollElement = (element) => {
         element.classList.add("scrolled");
-        console.log("element should be showing");
-        console.log(element.classList.contains("scrolled"));
     };
     
     // Removes the .scrolled class element.
     const hideScrollElement = (element) => {
         element.classList.remove("scrolled");
-        console.log("element should be hidden"); 
-        console.log(element.classList.contains("scrolled"));
     };
 
     // Makes the element visible/invisible depending on its position in the viewport.
@@ -87,7 +83,6 @@ window.onload = function(){
                 displayScrollElement(el); // display the element.  
             } else { // Otherwise, if it's not in the viewport,
                 hideScrollElement(el); // hide the element.
-                
             }
         })
     }
