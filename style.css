@@ -63,7 +63,7 @@ header .header-container nav .navbar li a{
   letter-spacing: .1em;
 }
 header .header-container nav .navbar li a:hover{
-    color: white;
+  color: white;
 }
 header .menu, .hamburger{
   display: none;
@@ -152,7 +152,7 @@ h2{
   /* For the fade-in */
   opacity: 1;
   /* For the drop-in */
-  transform: translate(0, 10rem)
+  transform: translate(0, 10rem);
 }
 
 /* Cake Types */
