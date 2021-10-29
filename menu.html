@@ -11,36 +11,65 @@
 </head>
 <body>
     <header id="header">
-        <div class="header-container" >
-            <a href="index.html"><p>CAKEMONSTER</p></a>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="menu">
-                    <li><a class="menuItem" href="menu.html">Menu</a></li>
-                    <li><a class="menuItem" href="#">Tutorials</a></li>
-                    <li><a class="menuItem" href="#">Classes</a></li>
-                    <li><a class="menuItem" href="#">About</a></li>
-                    <li><a class="menuItem" href="#">Testimonials</a></li>
-                    <li><a class="menuItem" href="#">Contact</a></li>
-                </ul>
-                <button class="hamburger">
-                    <i class="menuIcon material-icons">menu</i>
-                    <i class="closeIcon material-icons">close</i>
-                </button>
-            </nav>
+        <div class="first-header-container">
+            <div class="header-container" >
+                <a href="index.html" ><p>CAKEMONSTER</p></a>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="menu.html" >Menu</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a class="menuItem" href="menu.html">Menu</a></li>
+                        <li><a class="menuItem" href="#">Tutorials</a></li>
+                        <li><a class="menuItem" href="#">Classes</a></li>
+                        <li><a class="menuItem" href="#">About</a></li>
+                        <li><a class="menuItem" href="#">Testimonials</a></li>
+                        <li><a class="menuItem" href="#">Contact</a></li>
+                    </ul>
+                    <button class="hamburger">
+                        <i class="menuIcon material-icons">menu</i>
+                        <i class="closeIcon material-icons">close</i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <div class="second-header-container">
+            <div class="header-container" id="second-header">
+                <p>Menu</p>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Compare</a></li>
+                        <li><a href="#">Tech Specs</a></li>
+                        <li><a href="#">Order Now</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <div class="container">
+    <div class="container" id="menu-page">
         <main>
-            <section class="banner">
-                <h2>Choose your Cake</h2>
+            <section class="banner" id="menu-banner">
+                <h2 class="center">Choose your Cake.</h2>
+                <div class="cake-space">
+                    <figure>
+                        <figcaption>Purple Icing Cake</figcaption>
+                        <img src="images/menu/cake-vector-7.png" />
+                    </figure>
+                    <figure>
+                        <figcaption>Chocolate Icing Cake</figcaption>
+                        <img src="images/menu/cake-vector-8.png" />
+                    </figure>
+                    <figure>
+                        <figcaption>Pink Icing Cake</figcaption>
+                        <img src="images/menu/cake-vector-1.png" />
+                    </figure>
+                </div>
             </section>
 
             <section class="cake-types">
@@ -55,9 +84,44 @@
 
             <section class="order">
                 <h2 class="center">Instant Yumminess</h2>
-                <h3>The simplest path to deliciousness.</h3>
+                <h3>The simplest path to mouth-watering dessert.</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic temporibus, aliquid, est praesentium et nisi tempore in fuga maxime, at quidem ea odit libero. Ullam ab velit cum rerum beatae.</p>
             </section>
+            
+            <section class="order">
+                <h2 class="center">Inspired Deliciousness</h2>
+                <h3>Proving that cake can be heavenly.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic temporibus, aliquid, est praesentium et nisi tempore in fuga maxime, at quidem ea odit libero. Ullam ab velit cum rerum beatae.</p>
+            </section>
+
+            <section class="order">
+                <h2 class="center">Sweet Scrumptiousness</h2>
+                <h3>The most amazing cake ever made.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic temporibus, aliquid, est praesentium et nisi tempore in fuga maxime, at quidem ea odit libero. Ullam ab velit cum rerum beatae.</p>
+            </section>
+            <section class="order">
+                
+                <h2 class="center">Order Your Cake Today</h2>
+                <div class="steps">
+                    <div class="step-one">
+                        <p><span class="pink">1</span> &nbsp Select Your Cake</p>
+                        <p>Choose your cake type and size.</p>
+                    </div>
+                    <div class="step-two">
+                        <p><span class="pink">2</span> &nbsp Schedule Your Order</p>
+                        <p>A CakeMonster will call you to confirm the date of your order.</p>
+                    </div>
+                    <div class="step-three">
+                        <p><span class="pink">3</span> &nbsp Eat Your Cake!</p>
+                        <p>Pick up your yummy cake and... eat it!
+                        </p>
+                    </div>
+                </div>
+                <div class="button-placement">
+                    <button class="button button1">Order Now</button>
+                </div>
+            </section>
+
         </main>
         <footer>
             <div class="top-row">

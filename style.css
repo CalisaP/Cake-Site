@@ -4,18 +4,24 @@ html {
 body{
   margin: 0;
   font: normal 16px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.home-body{
   background: url('images/index/cake-layers.jpeg') center fixed;
   background-size: cover
-
 }
+
 
 header{
   top:0;
   width: 100%;
   position: fixed;
   z-index: 10;
-  background-color: #303030;
+  
   transition: top 1s;
+}
+.first-header-container{
+  background-color: #303030;
 }
 header .header-container{
   /* Limits width for large screens (fmrly 960px) */
@@ -29,6 +35,7 @@ header .header-container{
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 header .header-container p{
   color: white;
   margin: 0;
@@ -64,6 +71,19 @@ header .header-container nav .navbar li a{
 }
 header .header-container nav .navbar li a:hover{
   color: white;
+}
+header .second-header-container{
+  background-color: #303030de;
+}
+header .second-header-container #second-header .navbar{
+  justify-content: flex-end;
+}
+header #second-header p{
+  font-size: 1.1em;
+}
+header #second-header li{
+  font-size: 1em;
+  padding-right: 1.5rem;
 }
 header .menu, .hamburger{
   display: none;
@@ -201,6 +221,7 @@ h2{
   color: rgb(194, 192, 192);
 }
 
+/* INDEX */
 /* Yummy Section */
 .yummy h2{
   font-size: 3em;
@@ -283,6 +304,32 @@ footer .bottom-row{
   padding: 0 3rem;
 }
 
+/* MENU */
+#menu-page #menu-banner{
+  margin-top: 3.6rem;
+  height: 100vh;
+  background: url('images/menu/white-background.jpeg');
+}
+#menu-page #menu-banner h2{
+  padding-top: 4rem;
+  
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: .08em;
+}
+.cake-space{
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#menu-page #menu-banner figure{
+  text-align: center; /* centers captions and images */
+}
+#menu-page #menu-banner figure img{
+  height: auto;
+  width: 60%;
+}
 
 /* Responsive Sizing */
 @media (min-width: 2560px){
@@ -532,7 +579,6 @@ footer .bottom-row{
     display: none;
     margin: 0;
   }
-  
   header .header-container nav ul li a{
     color: rgb(153, 150, 150);
   }
