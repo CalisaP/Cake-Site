@@ -49,7 +49,6 @@ window.onload = function(){
         prevScrollPos = currentScrollPos;
     };
 
-
     // For scrolling movement on text; source: https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671
     
     // Selects all js-scroll elements

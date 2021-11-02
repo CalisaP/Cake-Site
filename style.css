@@ -13,11 +13,10 @@ body{
 
 
 header{
-  top:0;
+  top: 0;
   width: 100%;
   position: fixed;
   z-index: 10;
-  
   transition: top 1s;
 }
 .first-header-container{
@@ -35,7 +34,6 @@ header .header-container{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 header .header-container p{
   color: white;
   margin: 0;
@@ -516,6 +514,9 @@ footer .bottom-row{
     margin-right: 0;
     width: 100%;
   }
+  header .first-header-container{
+    height: 2.4rem;
+  }
   header .header-container{
     width: 600px;
   }
@@ -615,6 +616,7 @@ footer .bottom-row{
   header{
     margin: 0;
     padding-top: .5rem;
+    background-color: #303030;
   }
   header .header-container nav .menu{
     top: 1rem;
