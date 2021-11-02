@@ -19,8 +19,11 @@ header{
   z-index: 10;
   transition: top 1s;
 }
-.first-header-container{
+header .first-header-container{
   background-color: #303030;
+  position: fixed;
+  width: 100vw;
+  z-index: 9;
 }
 header .header-container{
   /* Limits width for large screens (fmrly 960px) */
@@ -160,6 +163,41 @@ h2{
   height: auto;
   top: 0;
   z-index: 8;
+}
+.onload-to-be-dropped{
+  /* top: -60px; */ 
+  width: 100vw;
+}
+ .onload-drop{
+  transform: translate(0, 3.7rem);
+} 
+.onload-disappear{
+  opacity: 0;
+  /* For the fade-in */
+  transition: opacity 1s, transform .5s ease-in-out;
+}
+.onload-appear{
+  /* For the fade-in */
+  opacity: 1;
+}
+.to-be-dropped{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.drop-in{
+  /* For the drop-in */
+  transform: translate(0, 3.4rem);
+  z-index: 8;
+}  
+.disappear{
+  opacity: 0;
+  /* For the fade-in */
+  transition: opacity 4s, transform 3s ease-in-out;
+}
+.appear{
+  /* For the fade-in */
+  opacity: 1;
 }
 .js-scroll{
   opacity: 0;
@@ -302,7 +340,7 @@ footer .bottom-row{
   padding: 0 3rem;
 }
 
-/* MENU */
+/* MENU PAGE */
 #menu-page #menu-banner{
   margin-top: 3.6rem;
   height: 100vh;

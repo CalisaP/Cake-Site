@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load", (event) => {
     // For header hamburger menu; source: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
     
     //Selects the relevant elements
@@ -7,7 +7,7 @@ window.onload = function(){
     const hamburger = document.querySelector(".hamburger");
     const cakeIcon = document.querySelector(".cake-figure")
     const closeIcon = document.querySelector(".closeIcon");
-    const menuIcon = document.querySelector(".menuIcon");
+    //const menuIcon = document.querySelector(".menuIcon");
 
     function toggleMenu() {
     if (menu.classList.contains("showMenu")) { // If the menu is showing...
@@ -20,7 +20,7 @@ window.onload = function(){
         closeIcon.style.display = "block"; // ... show the x icon,
         //menuIcon.style.display = "none"; // ... hide the hamburger icon.
         cakeIcon.style.display = "none"; //v ... hide the cake icon.
-    }
+        }
     }
     hamburger.addEventListener("click", toggleMenu); // Links the toggleMenu function to the click event.
 
@@ -31,7 +31,42 @@ window.onload = function(){
         }
     )
 
-    
+
+    //Handles primary element fade-in (main header, h)
+    const loadVanishedEls = document.querySelectorAll(".onload-disappear");
+    const showLoadElement = (element) => {
+        element.classList.add("onload-appear");
+    };
+    loadVanishedEls.forEach((el) => {
+        showLoadElement(el);
+    });
+    // Handles primary element drop-in (main header)
+    //const loadDropEls = document.querySelectorAll(".onload-to-be-dropped");
+   // const loadDrop = (element) => {
+    //    element.classList.add("onload-drop");
+   //     element.classList.remove("onload-to-be-dropped");
+   // };
+   // loadDropEls.forEach((el) => {
+   //     loadDrop(el);
+   // });
+    // Handles secondary element fade-in
+    const vanishedElements = document.querySelectorAll(".disappear");
+    const showElement = (element) => {
+        element.classList.add("appear");
+    };
+    vanishedElements.forEach((el) => {
+        showElement(el);
+    });
+    // Handles secondary element drop-in (secondary header)
+    const dropInEls = document.querySelectorAll(".to-be-dropped");
+    const dropElement = (element) => {
+        element.classList.add("drop-in");
+        element.classList.remove("to-be-dropped");
+    };
+    dropInEls.forEach((el) => {
+        dropElement(el);
+    });
+   
     // For header scroll movement; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
     // Sets this variable to the page's existing offset/scroll position.
@@ -92,7 +127,7 @@ window.onload = function(){
     window.addEventListener("scroll", () => {
         throttle (handleScrollAnimation, 250);
     })
-
+    
     // Throttle Function
     // Initialises the throttleTimer variable as false.
     let throttleTimer = false;
@@ -110,5 +145,5 @@ window.onload = function(){
             throttleTimer = false;
         }, time);
     }
-}
+});
 
