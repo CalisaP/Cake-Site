@@ -16,15 +16,14 @@ header{
   width: 100%;
   position: fixed;
   z-index: 10;
-  transition: top 1s;
-  background-color: pink;
+  transition: top 1s linear;
 }
 header #first-header-container{
   background-color: #303030;
   position: fixed;
   width: 100vw;
   z-index: 9;
-
+  transition: top 1s linear;
 }
 header .header-container{
   /* Limits width for large screens (fmrly 960px) */

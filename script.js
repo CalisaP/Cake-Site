@@ -76,9 +76,11 @@ window.addEventListener("load", (event) => {
     window.onscroll = function(){
         var  currentScrollPos = window.pageYOffset; // Sets this variable to the pages existing offset/scroll position.
         if (prevScrollPos > currentScrollPos){ // If the previous position is less than the current position (if you're scrolling up)...
+            document.getElementById("first-header-container").style.top = "-3.7rem";
             document.getElementById("header").style.top = "0"; 
             hamburger.style.top = ".4rem"; // show the hamburger menu.
         } else { // Otherwise, if you're scrolling down...
+            document.getElementById("first-header-container").style.top = "-10rem";
             document.getElementById("header").style.top = "-60px";
             hamburger.style.top = "-60px"; // ... hide the hamburger menu
         }
