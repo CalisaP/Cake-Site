@@ -17,11 +17,11 @@ header{
   position: fixed;
   z-index: 10;
   transition: top 1s linear;
-  background-color: pink;
 }
 header #first-header-container{
   background-color: #303030;
   width: 100vw;
+  position: relative;
   z-index: 9;
 }
 header .header-container{
@@ -74,6 +74,10 @@ header .header-container nav .navbar li a:hover{
 }
 header #second-header-container{
   background-color: #303030de;
+  position: relative;
+  top: -3rem;
+  z-index: 8;
+
 }
 header #second-header-container #second-header .navbar{
   justify-content: flex-end;
@@ -163,34 +167,27 @@ h2{
   top: 0;
   z-index: 8;
 }
-.onload-to-be-dropped{
-  /*position: fixed;*/
-}
 .onload-drop{
   transform: translate(0, 0);
 } 
 .onload-disappear{
   opacity: 0;
-  /* For the fade-in */
+  /* For the fade-in & drop-in*/
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 .onload-appear{
   /* For the fade-in */
   opacity: 1;
 }
-.to-be-dropped{
-  /*position: fixed;*/
-
-}
 .drop-in{
   /* For the drop-in */
-  transform: translate(0, 0);
+  transform: translate(0, 3rem);
   z-index: 8;
 }  
 .disappear{
   opacity: 0;
-  /* For the fade-in */
-  transition: opacity 1s ease-in-out 1s, transform 1s ease-in-out 1s;
+  /* For the fade-in & drop-in */
+  transition: opacity 1s ease-in-out 1.5s, transform 1s ease-in-out 1.5s;
 }
 .appear{
   /* For the fade-in */
@@ -198,7 +195,7 @@ h2{
 }
 .js-scroll{
   opacity: 0;
-  /* For the fade-in */
+  /* For the fade-in & drop-in */
   transition: opacity 3s, transform 3s ease-in-out;
 }
 .scrolled{
@@ -208,6 +205,7 @@ h2{
   transform: translate(0, 10rem);
 }
 
+/* INDEX PAGE*/
 /* Cake Types */
 .cake-types{
   margin-top: 0;
@@ -254,7 +252,6 @@ h2{
   color: rgb(194, 192, 192);
 }
 
-/* INDEX */
 /* Yummy Section */
 .yummy h2{
   font-size: 3em;
@@ -343,8 +340,7 @@ footer .bottom-row{
   background: url('images/menu/white-background.jpeg');
 }
 #menu-page #menu-banner h2{
-  padding-top: 4rem;
-  
+  padding-top: 7rem;
   font-size: 3rem;
   font-weight: lighter;
   letter-spacing: .08em;

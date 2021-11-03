@@ -66,7 +66,6 @@ window.addEventListener("load", (event) => {
         element.classList.remove("to-be-dropped");
     };
     dropInEls.forEach((el) => {
-        el.style.top = "-3.7rem";
         dropElement(el);
     });
    
