@@ -11,19 +11,20 @@ body{
   background-size: cover
 }
 
-
 header{
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 10;
   transition: top 1s;
+  background-color: pink;
 }
-header .first-header-container{
+header #first-header-container{
   background-color: #303030;
   position: fixed;
   width: 100vw;
   z-index: 9;
+
 }
 header .header-container{
   /* Limits width for large screens (fmrly 960px) */
@@ -73,10 +74,10 @@ header .header-container nav .navbar li a{
 header .header-container nav .navbar li a:hover{
   color: white;
 }
-header .second-header-container{
+header #second-header-container{
   background-color: #303030de;
 }
-header .second-header-container #second-header .navbar{
+header #second-header-container #second-header .navbar{
   justify-content: flex-end;
 }
 header #second-header p{
@@ -154,7 +155,6 @@ h2{
 }
 
 .banner{
-  margin-top: 3.2rem;
   margin-bottom: 0;
   background-color: white;
 }
@@ -165,16 +165,16 @@ h2{
   z-index: 8;
 }
 .onload-to-be-dropped{
-  /* top: -60px; */  
+  position: fixed;
   width: 100vw;
 }
- .onload-drop{
+.onload-drop{
   transform: translate(0, 3.7rem);
 } 
 .onload-disappear{
   opacity: 0;
   /* For the fade-in */
-  transition: opacity 1s, transform .5s ease-in-out;
+  transition: opacity 1s, transform 1s ease-in-out;
 }
 .onload-appear{
   /* For the fade-in */
@@ -187,13 +187,13 @@ h2{
 }
 .drop-in{
   /* For the drop-in */
-  transform: translate(0, 3.4rem);
+  transform: translate(0, 3.6rem);
   z-index: 8;
 }  
 .disappear{
   opacity: 0;
   /* For the fade-in */
-  transition: opacity 4s, transform 3s ease-in-out;
+  transition: opacity 1s ease-in-out 1s, transform 1s ease-in-out 1s;
 }
 .appear{
   /* For the fade-in */
@@ -342,7 +342,6 @@ footer .bottom-row{
 
 /* MENU PAGE */
 #menu-page #menu-banner{
-  margin-top: 3.6rem;
   height: 100vh;
   background: url('images/menu/white-background.jpeg');
 }
@@ -552,7 +551,7 @@ footer .bottom-row{
     margin-right: 0;
     width: 100%;
   }
-  header .first-header-container{
+  header #first-header-container{
     height: 2.4rem;
   }
   header .header-container{

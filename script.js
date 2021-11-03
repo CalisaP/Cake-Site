@@ -1,5 +1,5 @@
 window.addEventListener("load", (event) => {
-    // For header hamburger menu; source: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+    // FOR HEADER HAMBURGER MENU; source: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
     
     //Selects the relevant elements
     const menu = document.querySelector(".menu");
@@ -31,7 +31,7 @@ window.addEventListener("load", (event) => {
         }
     )
 
-
+    // FOR PRIMARY & SECONDARY HEADER FADE-IN AND DROP-IN FUNCTION
     //Handles primary element fade-in (main header, h)
     const loadVanishedEls = document.querySelectorAll(".onload-disappear");
     const showLoadElement = (element) => {
@@ -41,14 +41,15 @@ window.addEventListener("load", (event) => {
         showLoadElement(el);
     });
     // Handles primary element drop-in (main header)
-    //const loadDropEls = document.querySelectorAll(".onload-to-be-dropped");
-   // const loadDrop = (element) => {
-    //    element.classList.add("onload-drop");
-   //     element.classList.remove("onload-to-be-dropped");
-   // };
-   // loadDropEls.forEach((el) => {
-   //     loadDrop(el);
-   // });
+    const loadDropEls = document.querySelectorAll(".onload-to-be-dropped");
+    document.getElementById("first-header-container").style.top = "-3.7rem";
+    const loadDrop = (element) => {
+        element.classList.add("onload-drop");
+        element.classList.remove("onload-to-be-dropped");
+    };
+    loadDropEls.forEach((el) => {
+        loadDrop(el);
+    });
     // Handles secondary element fade-in
     const vanishedElements = document.querySelectorAll(".disappear");
     const showElement = (element) => {
@@ -67,7 +68,7 @@ window.addEventListener("load", (event) => {
         dropElement(el);
     });
    
-    // For header scroll movement; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+    // FOR HEADER SCROLL MOVEMENT; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
     // Sets this variable to the page's existing offset/scroll position.
     var  prevScrollPos= window.pageYOffset;
@@ -75,16 +76,16 @@ window.addEventListener("load", (event) => {
     window.onscroll = function(){
         var  currentScrollPos = window.pageYOffset; // Sets this variable to the pages existing offset/scroll position.
         if (prevScrollPos > currentScrollPos){ // If the previous position is less than the current position (if you're scrolling up)...
-            document.getElementById("header").style.top = "0"; //... show the header,
+            document.getElementById("header").style.top = "0"; 
             hamburger.style.top = ".4rem"; // show the hamburger menu.
         } else { // Otherwise, if you're scrolling down...
-            document.getElementById("header").style.top = "-60px"; //... hide the header
+            document.getElementById("header").style.top = "-60px";
             hamburger.style.top = "-60px"; // ... hide the hamburger menu
         }
         prevScrollPos = currentScrollPos;
     };
 
-    // For scrolling movement on text; source: https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671
+    // FOR SCROLLING MOVEMENT ON TEXT; source: https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671
     
     // Selects all js-scroll elements
     const scrollElements = document.querySelectorAll(".js-scroll");
