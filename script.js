@@ -42,12 +42,13 @@ window.addEventListener("load", (event) => {
     });
     // Handles primary element drop-in (main header)
     const loadDropEls = document.querySelectorAll(".onload-to-be-dropped");
-    document.getElementById("first-header-container").style.top = "-3.7rem";
+    //document.getElementById("first-header-container").style.top = "-3.7rem";
     const loadDrop = (element) => {
         element.classList.add("onload-drop");
         element.classList.remove("onload-to-be-dropped");
     };
     loadDropEls.forEach((el) => {
+        el.style.top = "0rem";
         loadDrop(el);
     });
     // Handles secondary element fade-in
@@ -65,6 +66,7 @@ window.addEventListener("load", (event) => {
         element.classList.remove("to-be-dropped");
     };
     dropInEls.forEach((el) => {
+        el.style.top = "-3.7rem";
         dropElement(el);
     });
    
@@ -76,11 +78,9 @@ window.addEventListener("load", (event) => {
     window.onscroll = function(){
         var  currentScrollPos = window.pageYOffset; // Sets this variable to the pages existing offset/scroll position.
         if (prevScrollPos > currentScrollPos){ // If the previous position is less than the current position (if you're scrolling up)...
-            document.getElementById("first-header-container").style.top = "-3.7rem";
             document.getElementById("header").style.top = "0"; 
             hamburger.style.top = ".4rem"; // show the hamburger menu.
         } else { // Otherwise, if you're scrolling down...
-            document.getElementById("first-header-container").style.top = "-10rem";
             document.getElementById("header").style.top = "-60px";
             hamburger.style.top = "-60px"; // ... hide the hamburger menu
         }
