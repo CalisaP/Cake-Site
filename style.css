@@ -198,7 +198,7 @@ h2{
 /* Banner fade-in */
 .disappear-slowest{
   opacity: 0;
-  transition: opacity 2s ease-in-out 3s, transform 3s ease-in-out 3s;
+  transition: opacity 2s ease-in-out 3s, transform 2s ease-in-out 3s;
 }
 .appear-slowest{
   /* For the fade-in */
@@ -206,10 +206,13 @@ h2{
 }
 /* Banner slide-in */
 .slide-left{
-  transform: translate(-50px, 0);
+  transform: translate(-40rem, 0);
+}
+.right{
+  
 }
 .slide-right{
-  transform: translate(50px, 0);
+  transform: translate(40rem, 0);
 }
 /* On scroll drop-in */
 .js-scroll{
@@ -365,13 +368,25 @@ footer .bottom-row{
   letter-spacing: .08em;
 }
 .cake-space{
-  margin-top: 9rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 60vh;
 }
 #menu-page #menu-banner figure{
   text-align: center; /* centers captions and images */
+}
+#menu-page #menu-banner #cake-1{
+  position: relative;
+  left: -30rem;
+}
+#menu-page #menu-banner #cake-2{
+  align-self: flex-end;
+}
+#menu-page #menu-banner #cake-3{
+  position: relative;
+  right: -30rem;
+
 }
 #menu-page #menu-banner figure img{
   height: auto;
