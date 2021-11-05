@@ -370,7 +370,7 @@ footer .bottom-row{
   position: relative;
   left: -30rem;
 }
-#menu-page #menu-banner #cake-2{
+#menu-page #menu-banner #cake-figure-2{
   align-self: flex-end;
 }
 #menu-page #menu-banner #cake-3{
@@ -380,22 +380,25 @@ footer .bottom-row{
 #menu-page #menu-banner figure img{
   height: auto;
   width: 60%;
+  margin: 0;
+  padding: 0;
 }
 #menu-page #menu-banner figure .slider-arrows{
   width: 90%;
   height: auto;
   filter: brightness(100%);
+  transition: filter 1s ease-in-out;
 }
 #menu-page #menu-banner figure .slider-arrows:hover{
-  filter: brightness(120%);
+  filter: brightness(135%);
 }
 
 /* Cakes slide-in */
 .slide-left{
-  transform: translate(-40rem, 0);
+  transform: translate(-30rem, 0);
 }
 .slide-right{
-  transform: translate(40rem, 0);
+  transform: translate(30rem, 0);
 }
 
 /* Responsive Sizing */
