@@ -193,6 +193,15 @@ h2{
   /* For the fade-in */
   opacity: 1;
 }
+.disappear-slowest{
+  opacity: 0;
+  transition: opacity 2s ease-in-out 3s, transform 1s ease-in-out 1.5s;
+}
+.appear-slowest{
+    /* For the fade-in */
+    opacity: 1;
+
+}
 .js-scroll{
   opacity: 0;
   /* For the fade-in & drop-in */

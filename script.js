@@ -32,7 +32,7 @@ window.addEventListener("load", (event) => {
     )
 
     // FOR PRIMARY & SECONDARY HEADER FADE-IN AND DROP-IN FUNCTION
-    //Handles primary element fade-in (main header, h)
+    //Handles primary element fade-in (main header, h1)
     const loadVanishedEls = document.querySelectorAll(".onload-disappear");
     const showLoadElement = (element) => {
         element.classList.add("onload-appear");
@@ -68,6 +68,16 @@ window.addEventListener("load", (event) => {
     dropInEls.forEach((el) => {
         dropElement(el);
     });
+    // Handles tertiary element fade-in (cakes)
+    const slowestElements = document.querySelectorAll(".disappear-slowest");
+    const showSlowestElement = (element) => {
+        element.classList.add("appear-slowest");
+    };
+    slowestElements.forEach((el) => {
+        showSlowestElement(el);
+    });
+    
+
    
     // FOR HEADER SCROLL MOVEMENT; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
