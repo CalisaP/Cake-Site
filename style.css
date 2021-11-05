@@ -204,16 +204,6 @@ h2{
   /* For the fade-in */
   opacity: 1;
 }
-/* Banner slide-in */
-.slide-left{
-  transform: translate(-40rem, 0);
-}
-.right{
-  
-}
-.slide-right{
-  transform: translate(40rem, 0);
-}
 /* On scroll drop-in */
 .js-scroll{
   opacity: 0;
@@ -386,11 +376,26 @@ footer .bottom-row{
 #menu-page #menu-banner #cake-3{
   position: relative;
   right: -30rem;
-
 }
 #menu-page #menu-banner figure img{
   height: auto;
   width: 60%;
+}
+#menu-page #menu-banner figure .slider-arrows{
+  width: 90%;
+  height: auto;
+  filter: brightness(100%);
+}
+#menu-page #menu-banner figure .slider-arrows:hover{
+  filter: brightness(120%);
+}
+
+/* Cakes slide-in */
+.slide-left{
+  transform: translate(-40rem, 0);
+}
+.slide-right{
+  transform: translate(40rem, 0);
 }
 
 /* Responsive Sizing */
