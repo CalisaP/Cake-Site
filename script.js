@@ -42,7 +42,6 @@ window.addEventListener("load", (event) => {
     });
     // Handles primary element drop-in (main header)
     const loadDropEls = document.querySelectorAll(".onload-to-be-dropped");
-    //document.getElementById("first-header-container").style.top = "-3.7rem";
     const loadDrop = (element) => {
         element.classList.add("onload-drop");
         element.classList.remove("onload-to-be-dropped");
@@ -68,7 +67,7 @@ window.addEventListener("load", (event) => {
     dropInEls.forEach((el) => {
         dropElement(el);
     });
-    // Handles tertiary element fade-in (cakes)
+    // Handles tertiary element fade-in (Menu Page Banner)
     const slowestElements = document.querySelectorAll(".disappear-slowest");
     const showSlowestElement = (element) => {
         element.classList.add("appear-slowest");
@@ -76,7 +75,24 @@ window.addEventListener("load", (event) => {
     slowestElements.forEach((el) => {
         showSlowestElement(el);
     });
-    
+    // Handles tertiary element slide-in (Menu Page Banner)
+    const slideLeftEls = document.querySelectorAll(".left");
+    const slideLeft = (element) => {
+        element.classList.add("slide-right");
+        element.classList.remove("left");
+    };
+    slideLeftEls.forEach((el) => {
+        slideLeft(el);
+    });
+    const slideRightEls = document.querySelectorAll(".right");
+    const slideRight = (element) => {
+        element.classList.add("slide-left");
+        element.classList.remove("right");
+    };
+    slideRightEls.forEach((el) => {
+        slideRight(el);
+    });
+
 
    
     // FOR HEADER SCROLL MOVEMENT; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp

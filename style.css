@@ -167,6 +167,7 @@ h2{
   top: 0;
   z-index: 8;
 }
+/* Main Header drop-in and fade-in */
 .onload-drop{
   transform: translate(0, 0);
 } 
@@ -179,6 +180,7 @@ h2{
   /* For the fade-in */
   opacity: 1;
 }
+/* Secondary Header drop-in and fade-in */
 .drop-in{
   /* For the drop-in */
   transform: translate(0, 3rem);
@@ -193,15 +195,23 @@ h2{
   /* For the fade-in */
   opacity: 1;
 }
+/* Banner fade-in */
 .disappear-slowest{
   opacity: 0;
-  transition: opacity 2s ease-in-out 3s, transform 1s ease-in-out 1.5s;
+  transition: opacity 2s ease-in-out 3s, transform 3s ease-in-out 3s;
 }
 .appear-slowest{
-    /* For the fade-in */
-    opacity: 1;
-
+  /* For the fade-in */
+  opacity: 1;
 }
+/* Banner slide-in */
+.slide-left{
+  transform: translate(-50px, 0);
+}
+.slide-right{
+  transform: translate(50px, 0);
+}
+/* On scroll drop-in */
 .js-scroll{
   opacity: 0;
   /* For the fade-in & drop-in */
