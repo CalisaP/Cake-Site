@@ -401,35 +401,30 @@ footer .bottom-row{
 }
 /* Cake rotation inspired by: https://codepen.io/ZachSaucier/pen/rsvgK*/
 .rotate-cake-right{
-  transform-origin: 100%;
-  animation: slide-right 3s ease-out infinite;
-}
-.rotate-cake-right:before{
-  animation: slide-right 3s ease-out infinite;
+  animation: slide-right 3s ease-out 1 forwards;
 }
 @keyframes slide-right{
-  100%{ transform:translate(67rem);
-  }
+  100%{ transform:translate(67rem)};
 }
 .rotate-cake-left{
-  transform-origin: 100%;
-  animation: slide-left 3s ease-out infinite;
-}
-.rotate-cake-left:before{
-  animation: slide-left 3s ease-out infinite;
+  animation: slide-left 3s ease-out 1 forwards;
 }
 @keyframes slide-left{
   100%{ transform: translate(-34.5rem, -8rem)};
 }
 .rotate-cake-front{
-  transform-origin: 100%;
-  animation: slide-front 3s ease-out infinite;
-}
-.rotate-cake-front:before{
-  animation: slide-front 3s ease-out infinite;
+  animation: slide-front 3s ease-out 1 forwards;
 }
 @keyframes slide-front{
   100%{ transform: translate(-33rem, 8.3rem)};
+}
+.cake-rotation{
+  animation: rotate-cake 12s ease-out infinite;
+}
+@keyframes rotate-cake{
+  0%{transform:translate(67rem)};
+  50%{transform: translate(-33rem, 8.3rem)};
+  100%{transform: translate(-34.5rem, -8rem)};
 }
 
 /* Responsive Sizing */

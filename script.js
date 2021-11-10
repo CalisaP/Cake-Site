@@ -93,7 +93,32 @@ window.addEventListener("load", (event) => {
         slideRight(el);
     });
 
+    // FOR MENU PAGE CAKE ROTATION
+    const cakeOne = document.getElementById("cake-figure-1");
+    const cakeTwo = document.getElementById("cake-figure-2");
+    const cakeThree = document.getElementById("cake-figure-3");
+    const sliderRightArrow = document.getElementById("slider-right-arrow");
+
+    function clockwiseRotation(){
+        if (cakeOne.classList.contains("rotate-cake")){
+            cakeOne.classList.remove("rotate-cake");
+            cakeOne.classList.add("rotate-cake-right");
+        } else if (cakeOne.classList.contains("rotate-cake-right")){
+            cakeOne.classList.remove("rotate-cake-right");
+            cakeOne.classList.add("rotate-cake-front");
+        } else if (cakeOne.classList.contains("rotate-cake-front")){
+            cakeOne.classList.remove("rotate-cake-front");
+            cakeOne.classList.add("rotate-cake-left");
+        } else {
+            cakeOne.classList.remove("rotate-cake-left");
+            cakeOne.classList.add("rotate-cake");
+        }
+    }
+    sliderRightArrow.addEventListener("click", clockwiseRotation);
+
     
+
+
    
     // FOR HEADER SCROLL MOVEMENT; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
