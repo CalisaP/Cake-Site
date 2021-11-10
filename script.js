@@ -93,7 +93,7 @@ window.addEventListener("load", (event) => {
         slideRight(el);
     });
 
-
+    
    
     // FOR HEADER SCROLL MOVEMENT; source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 

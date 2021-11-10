@@ -399,7 +399,7 @@ footer .bottom-row{
 .slide-right{
   transform: translate(30rem, 0);
 }
-/* Cake rotation */
+/* Cake rotation inspired by: https://codepen.io/ZachSaucier/pen/rsvgK*/
 .rotate-cake-right{
   transform-origin: 100%;
   animation: slide-right 3s ease-out infinite;
