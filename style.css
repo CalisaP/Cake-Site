@@ -93,7 +93,7 @@ header .menu, .hamburger{
   display: none;
   transition: top 3s linear;
 }
-header .hamburger .cake-figure{
+header .hamburger .menu-cake-figure{
   padding: 0;
   margin: 0;
 }
@@ -366,12 +366,21 @@ footer .footer-bottom-row{
 #menu-page main #menu-banner figure{
   text-align: center; /* centers captions and images */
 }
+#cake-figure{
+  position: relative;
+}
 #menu-page main #menu-banner #cake-1{
   position: relative;
   left: -30rem;
 }
 #menu-page main #menu-banner #cake-figure-2{
   align-self: flex-end;
+}
+#cake-2{
+  position: relative;
+}
+#cake-figure-2 figcaption{
+  position: relative;
 }
 #menu-page main #menu-banner #cake-3{
   position: relative;
@@ -404,20 +413,21 @@ footer .footer-bottom-row{
   animation: slide-right 3s ease-out 1 forwards;
 }
 @keyframes slide-right{
-  100%{ transform:translate(67rem)};
-}
-.rotate-cake-left{
-  animation: slide-left 3s ease-out 1 forwards;
-}
-@keyframes slide-left{
-  100%{ transform: translate(-34.5rem, -8rem)};
+  100%{ transform: translate(66.5rem)};
 }
 .rotate-cake-front{
   animation: slide-front 3s ease-out 1 forwards;
 }
 @keyframes slide-front{
-  100%{ transform: translate(-33rem, 8.3rem)};
+  100%{ transform: translate(-33rem, 8rem)};
 }
+.rotate-cake-left{
+  animation: slide-left 3s ease-out 1 forwards;
+}
+@keyframes slide-left{
+  100%{ transform: translate(-33.5rem, -8rem)};
+}
+
 /*
 .cake-rotation{
   animation: rotate-cake 12s ease-out infinite;
