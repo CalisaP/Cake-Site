@@ -318,31 +318,31 @@ footer{
 .footer-hover:hover{
   color: #e19b9f;
 }
-footer .top-row{
+footer .footer-top-row{
   display: flex;
   justify-content: space-around;
 }
-footer .top-row .footer-left{
+footer .footer-top-row .footer-left{
   letter-spacing: .2em;
 }
-footer .top-row .footer-left p:nth-of-type(1){
+footer .footer-top-row .footer-left p:nth-of-type(1){
   font-size: 14px;
   letter-spacing: .3em;
 }
-footer .top-row .footer-right{
+footer .footer-top-row .footer-right{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 60%;
   letter-spacing: .2em;
 }
-footer .top-row .footer-right #contact figure{
+footer .footer-top-row .footer-right #footer-contact figure{
   margin: 0;
 }
-footer .top-row .footer-right #contact figure img{
+footer .footer-top-row .footer-right #footer-contact figure img{
   padding-right: .5rem;
 }
-footer .bottom-row{
+footer .footer-bottom-row{
   padding: 0 3rem;
 }
 
@@ -489,7 +489,7 @@ footer .bottom-row{
     width: 100%;
     height: 13rem;
   }
-  footer .top-row .footer-left p:nth-of-type(1){
+  footer .footer-top-row .footer-left p:nth-of-type(1){
     font-size: 1.3em;
     letter-spacing: .3em;
   }  
@@ -535,7 +535,7 @@ footer .bottom-row{
     width: 100%;
     font-size: .9em;
   }
-  footer .top-row .footer-left p:nth-of-type(1){
+  footer .footer-top-row .footer-left p:nth-of-type(1){
     font-size: 1.2em;
     letter-spacing: .4em;
   }  
@@ -598,11 +598,11 @@ footer .bottom-row{
     width: 40%;
     margin-left: 0rem;
   }
-  footer .top-row{
+  footer .footer-top-row{
     flex-wrap: wrap;
     padding: 0rem 3rem;
   }
-  footer .top-row .footer-left{
+  footer .footer-top-row .footer-left{
     width: 35%;
   }
 }
@@ -696,17 +696,17 @@ footer .bottom-row{
     font-size: .9em;
     height: 8.5rem;
   }
-  footer .top-row{
+  footer .footer-top-row{
     flex-wrap: nowrap;
   }
-  footer .top-row .footer-left p:nth-of-type(1){
+  footer .footer-top-row .footer-left p:nth-of-type(1){
     font-size: 1em;
     letter-spacing: .4em;
   }  
-  footer .top-row .footer-left, footer .top-row .footer-right, footer .bottom-row{
+  footer .footer-top-row .footer-left, footer .footer-top-row .footer-right, footer .footer-bottom-row{
     font-size: .8em;
   }
-  footer .top-row .footer-right{
+  footer .footer-top-row .footer-right{
     width: 70%;
   }
 }
@@ -737,7 +737,7 @@ footer .bottom-row{
     width: 100%;
     padding-left: 0;
   }
-  footer .top-row{
+  footer .footer-top-row{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -746,16 +746,16 @@ footer .bottom-row{
     padding: 0;
     margin-right: 0;
   }
-  footer .top-row .footer-left, footer .top-row .footer-right{
+  footer .footer-top-row .footer-left, footer .footer-top-row .footer-right{
     width: 100%;
   }
-  footer .top-row .footer-right figure{
+  footer .footer-top-row .footer-right figure{
     padding-left: 9rem;
   }
-  footer .top-row .footer-right #cakes, #learn, #about, #contact p{
+  footer .footer-top-row .footer-right #footer-cakes, #footer-learn, #footer-about, #footer-contact p{
     display: none;
   }
-  footer .bottom-row{
+  footer .footer-bottom-row{
     width: 70%;
   }
 }
@@ -794,11 +794,11 @@ footer .bottom-row{
   footer{
     height: 8.5rem;
   }
-  footer .top-row .footer-left, footer .top-row .footer-right{
+  footer .footer-top-row .footer-left, footer .footer-top-row .footer-right{
     width: 90%;
     margin: 0;
   }
-  footer .top-row .footer-right figure{
+  footer .footer-top-row .footer-right figure{
     padding-left: 6rem;
   }
 
@@ -808,7 +808,7 @@ footer .bottom-row{
   .cake-types .cakes figure figcaption{
     font-size: 1.1em;
   }
-  footer .top-row .footer-right figure{
+  footer .footer-top-row .footer-right figure{
     padding-left: 5rem;
   }
 }
