@@ -428,15 +428,6 @@ footer .footer-bottom-row{
   100%{ transform: translate(-33.5rem, -8rem)};
 }
 
-/*
-.cake-rotation{
-  animation: rotate-cake 12s ease-out infinite;
-}
-@keyframes rotate-cake{
-  0%{transform:translate(67rem)};
-  50%{transform: translate(-33rem, 8.3rem)};
-  100%{transform: translate(-34.5rem, -8rem)};
-}*/
 
 /* Responsive Sizing */
 @media (min-width: 2560px){

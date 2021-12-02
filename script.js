@@ -96,6 +96,7 @@ window.addEventListener("load", (event) => {
     // FOR MENU PAGE CAKE ROTATION
     const cakeOne = document.getElementById("cake-figure-1");
     const cakeTwo = document.getElementById("cake-2");
+    const cakeTwoCaption = document.getElementById("cake-2-caption");
     const cakeThree = document.getElementById("cake-figure-3");
     const sliderRightArrow = document.getElementById("slider-right-arrow");
 
@@ -104,26 +105,40 @@ window.addEventListener("load", (event) => {
             cakeTwo.classList.remove("rotate-cake");
             cakeTwo.classList.add("rotate-cake-left");
             console.log("first click slide left");
+            cakeTwoCaption.classList.add("rotate-cake-left");
         } else if (cakeTwo.classList.contains("rotate-cake-left")){
             cakeTwo.classList.remove("rotate-cake-left");
             cakeTwo.classList.add("rotate-cake-right");
             cakeTwo.style.left = "-33.5rem";
             cakeTwo.style.top = "-8rem";
             console.log("second click slide right");
+            cakeTwoCaption.classList.remove("rotate-cake-left");
+            cakeTwoCaption.classList.add("rotate-cake-right");
+            cakeTwoCaption.style.left = "-33.5rem";
+            cakeTwoCaption.style.top = "-8rem";
         } else if (cakeTwo.classList.contains("rotate-cake-right")){
             cakeTwo.classList.remove("rotate-cake-right");
             cakeTwo.classList.add("rotate-cake-front");
             cakeTwo.style.left = "33rem";
             console.log("third click slide front");
+            cakeTwoCaption.classList.remove("rotate-cake-right");
+            cakeTwoCaption.classList.add("rotate-cake-front");
+            cakeTwoCaption.style.left = "33rem";
         } else if(cakeTwo.classList.contains("rotate-cake-front")) {
             cakeTwo.classList.remove("rotate-cake-front");
             cakeTwo.classList.add("rotate-cake-left");
             cakeTwo.style.left = "0rem";
             cakeTwo.style.top = "0rem";
             console.log("fourth click slide left again");
+            cakeTwoCaption.classList.remove("rotate-cake-front");
+            cakeTwoCaption.classList.add("rotate-cake-left");
+            cakeTwoCaption.style.left = "0rem";
+            cakeTwoCaption.style.top = "0rem";
         }
-    }
-    sliderRightArrow.addEventListener("click", clockwiseRotation);
+    }        
+    sliderRightArrow.addEventListener("click", () => {
+        clockwiseRotation();
+    });
 
     
 
