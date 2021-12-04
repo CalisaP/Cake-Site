@@ -366,11 +366,16 @@ footer .footer-bottom-row{
 #menu-page main #menu-banner figure{
   text-align: center; /* centers captions and images */
 }
-#cake-figure{
+.cake-figure{
   position: relative;
 }
-#menu-page main #menu-banner #cake-1{
+.cake-img{
   position: relative;
+}
+.cake-caption{
+  position:relative;
+}
+#menu-page main #menu-banner #cake-1{
   left: -30rem;
 }
 #menu-page main #menu-banner #cake-figure-2{
@@ -383,7 +388,6 @@ footer .footer-bottom-row{
   position: relative;
 }
 #menu-page main #menu-banner #cake-3{
-  position: relative;
   right: -30rem;
 }
 #menu-page main #menu-banner .cake-space figure img{
@@ -409,22 +413,61 @@ footer .footer-bottom-row{
   transform: translate(30rem, 0);
 }
 /* Cake rotation inspired by: https://codepen.io/ZachSaucier/pen/rsvgK*/
-.rotate-cake-right{
-  animation: slide-right 3s ease-out 1 forwards;
+.rotate-cake-1-right{
+  animation: slide-1-right 3s ease-out 1 forwards;
 }
-@keyframes slide-right{
+@keyframes slide-1-right{
+  100%{ transform: translate(96.5rem)};
+}
+.rotate-cake-caption-1-right{
+  animation: slide-caption-1-right 3s ease-out 1 forwards;
+}
+@keyframes slide-caption-1-right{
   100%{ transform: translate(66.5rem)};
 }
-.rotate-cake-front{
-  animation: slide-front 3s ease-out 1 forwards;
+.rotate-cake-1-front{
+  animation: slide-1-front 3s ease-out 1 forwards;
 }
-@keyframes slide-front{
+@keyframes slide-1-front{
+  100%{ transform: translate(0rem, 8rem)};
+}
+.rotate-cake-caption-1-front{
+  animation: slide-cake-caption-1-front 3s ease-out 1 forwards;
+}
+@keyframes slide-cake-caption-1-front{
   100%{ transform: translate(-33rem, 8rem)};
 }
-.rotate-cake-left{
-  animation: slide-left 3s ease-out 1 forwards;
+.rotate-cake-1-left{
+  animation: slide-1-left 3s ease-out 1 forwards;
 }
-@keyframes slide-left{
+@keyframes slide-1-left{
+  100%{ transform: translate(0rem, -8rem)};
+}
+.rotate-cake-caption-1-left{
+  animation: slide-cake-caption-1-left 3s ease-out 1 forwards;
+}
+@keyframes slide-cake-caption-1-left{
+  100%{ transform: translate(-33rem, -8rem)};
+}
+
+
+
+.rotate-cake-2-right{
+  animation: slide-2-right 3s ease-out 1 forwards;
+}
+@keyframes slide-2-right{
+  100%{ transform: translate(66.5rem)};
+}
+.rotate-cake-2-front{
+  animation: slide-2-front 3s ease-out 1 forwards;
+}
+@keyframes slide-2-front{
+  100%{ transform: translate(-33rem, 8rem)};
+}
+.rotate-cake-2-left{
+  animation: slide-2-left 3s ease-out 1 forwards;
+}
+@keyframes slide-2-left{
   100%{ transform: translate(-33.5rem, -8rem)};
 }
 
