@@ -21,16 +21,16 @@ window.addEventListener("load", (event) => {
             caption.classList.remove("rotate-cake-caption-1-right");    
             cake.classList.add("rotate-cake-1-front");
             caption.classList.add("rotate-cake-caption-1-front");
-            cake.style.left = "33.5rem";
+            cake.style.left = "36.5rem";
             caption.style.left = "66.5rem";
         } else if (cake.classList.contains("rotate-cake-1-front")){
             cake.classList.remove("rotate-cake-1-front");
             caption.classList.remove("rotate-cake-caption-1-front");    
             cake.classList.add("rotate-cake-1-left");
             caption.classList.add("rotate-cake-caption-1-left");
-            cake.style.left = "0rem";
+            cake.style.left = "3.5rem";
             cake.style.top = "8rem";
-            caption.style.left = "33rem";
+            caption.style.left = "33.5rem";
             caption.style.top = "8rem";
         } else if (cake.classList.contains("rotate-cake-1-left")){
             cake.classList.remove("rotate-cake-1-left");
@@ -63,8 +63,8 @@ window.addEventListener("load", (event) => {
             caption.classList.remove("rotate-cake-2-right");    
             caption.classList.add("rotate-cake-2-front");
             cake.classList.add("rotate-cake-2-front");
-            cake.style.left = "30rem";
-            caption.style.left = "30rem";
+            cake.style.left = "33rem";
+            caption.style.left = "33rem";
             } else if (cake.classList.contains("rotate-cake-2-front")){
             cake.classList.remove("rotate-cake-2-front");
             caption.classList.remove("rotate-cake-2-front");    

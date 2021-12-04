@@ -81,7 +81,7 @@
     animation: slide-1-front 3s ease-out 1 forwards;
   }
   @keyframes slide-1-front{
-    100%{ transform: translate(0rem, 8rem)};
+    100%{ transform: translate(-3rem, 8rem)};
   }
   .rotate-cake-caption-1-front{
     animation: slide-cake-caption-1-front 3s ease-out 1 forwards;
@@ -93,7 +93,7 @@
     animation: slide-1-left 3s ease-out 1 forwards;
   }
   @keyframes slide-1-left{
-    100%{ transform: translate(0rem, -8rem)};
+    100%{ transform: translate(-3.5rem, -8rem)};
   }
   .rotate-cake-caption-1-left{
     animation: slide-cake-caption-1-left 3s ease-out 1 forwards;
