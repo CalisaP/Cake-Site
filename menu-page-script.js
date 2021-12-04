@@ -10,6 +10,7 @@ window.addEventListener("load", (event) => {
     const captions = document.getElementsByClassName("cake-caption");
     const sliderRightArrow = document.getElementById("slider-right-arrow");
 
+    //Clockwise Rotation
     function cakeOneClockwise(cake, caption){
         if (cake.classList.contains("rotate-cake-cw")){
             cake.classList.remove("rotate-cake-cw");
@@ -128,4 +129,6 @@ window.addEventListener("load", (event) => {
         cakeTwoClockwise(cakeTwo, cakeTwoCaption);
         cakeThreeClockwise(cakeThree, cakeThreeCaption);
     });
+
+    //Counter-Clockwise Rotation
 });
