@@ -16,7 +16,6 @@ window.addEventListener("load", (event) => {
             caption.classList.remove("rotate-cake");
             cake.classList.add("rotate-cake-1-right");
             caption.classList.add("rotate-cake-caption-1-right");
-                console.log("going right");
         } else if (cake.classList.contains("rotate-cake-1-right")){
             cake.classList.remove("rotate-cake-1-right");
             caption.classList.remove("rotate-cake-caption-1-right");    
@@ -24,7 +23,6 @@ window.addEventListener("load", (event) => {
             caption.classList.add("rotate-cake-caption-1-front");
             cake.style.left = "33.5rem";
             caption.style.left = "66.5rem";
-                console.log("going front");
         } else if (cake.classList.contains("rotate-cake-1-front")){
             cake.classList.remove("rotate-cake-1-front");
             caption.classList.remove("rotate-cake-caption-1-front");    
@@ -34,7 +32,6 @@ window.addEventListener("load", (event) => {
             cake.style.top = "8rem";
             caption.style.left = "33rem";
             caption.style.top = "8rem";
-                console.log("going left");
         } else if (cake.classList.contains("rotate-cake-1-left")){
             cake.classList.remove("rotate-cake-1-left");
             caption.classList.remove("rotate-cake-caption-1-left");    
@@ -44,7 +41,6 @@ window.addEventListener("load", (event) => {
             cake.style.top = "-.5rem";
             caption.style.left = ".5rem";
             caption.style.top = "0rem";                
-            console.log("going home");
         }
     }
     function cakeTwoClockwise(cake, caption){
@@ -79,6 +75,52 @@ window.addEventListener("load", (event) => {
             caption.style.left = "0rem";
             caption.style.top = "0rem";
             }
+    }
+    function cakeThreeClockwise(cake, caption){
+        if (cake.classList.contains("rotate-cake")){
+            cake.classList.remove("rotate-cake");
+            caption.classList.remove("rotate-cake");
+            cake.classList.add("rotate-cake-3-front");
+            caption.classList.add("rotate-cake-caption-3-front");
+            console.log("going front");
+            var rect = caption.getBoundingClientRect();
+            console.log("left ",rect.left, "top ", rect.top, "right ", rect.right, "bottom ", rect.bottom);
+        } else if(cake.classList.contains("rotate-cake-3-front")){
+            cake.classList.remove("rotate-cake-3-front");
+            caption.classList.remove("rotate-cake-caption-3-front");    
+            cake.classList.add("rotate-cake-3-left");
+            caption.classList.add("rotate-cake-caption-3-left");
+            cake.style.left = "-3rem";
+            cake.style.top = "8rem";
+            caption.style.left = "-33rem";
+            caption.style.top = "8rem";
+            console.log("going left");
+            var rect = caption.getBoundingClientRect();
+            console.log("left ",rect.left, "top ", rect.top, "right ", rect.right, "bottom ", rect.bottom);
+        } else if(cake.classList.contains("rotate-cake-3-left")){
+            cake.classList.remove("rotate-cake-3-left");
+            caption.classList.remove("rotate-cake-caption-3-left");
+            cake.classList.add("rotate-cake-3-right");
+            caption.classList.add("rotate-cake-caption-3-right");
+            cake.style.left = "-36.5rem";
+            cake.style.top = "0rem";
+            caption.style.left = "-66rem";
+            caption.style.top = "0rem";
+            console.log("going right");
+            var rect = caption.getBoundingClientRect();
+            console.log("left ",rect.left, "top ", rect.top, "right ", rect.right, "bottom ", rect.bottom);
+        } else if(cake.classList.contains("rotate-cake-3-right")){
+            cake.classList.remove("rotate-cake-3-right");
+            caption.classList.remove("rotate-cake-caption-3-right");    
+            cake.classList.add("rotate-cake-3-front");
+            caption.classList.add("rotate-cake-caption-3-front");
+            cake.style.left = "30rem";
+            caption.style.left = "0rem";
+            caption.style.top = "0rem";
+            console.log("going home");
+            var rect = caption.getBoundingClientRect();
+            console.log("left ",rect.left, "top ", rect.top, "right ", rect.right, "bottom ", rect.bottom);
+        }
     }
 
     function clockwiseCakeRotations(i){
@@ -144,5 +186,6 @@ window.addEventListener("load", (event) => {
     sliderRightArrow.addEventListener("click", () => {
         cakeOneClockwise(cakeOne, cakeOneCaption);
         cakeTwoClockwise(cakeTwo, cakeTwoCaption);
+        cakeThreeClockwise(cakeThree, cakeThreeCaption);
     });
 });
