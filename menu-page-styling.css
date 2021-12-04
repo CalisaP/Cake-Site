@@ -65,95 +65,96 @@
     transform: translate(30rem, 0);
   }
   /* Cake rotation inspired by: https://codepen.io/ZachSaucier/pen/rsvgK*/
-  .rotate-cake-1-right{
-    animation: slide-1-right 3s ease-out 1 forwards;
+  /* Clockwise Rotation */
+  .cw-rotate-cake-1-right{
+    animation: cw-slide-1-right 3s ease-out 1 forwards;
   }
-  @keyframes slide-1-right{
+  @keyframes cw-slide-1-right{
     100%{ transform: translate(96.5rem)};
   }
-  .rotate-cake-caption-1-right{
-    animation: slide-caption-1-right 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-1-right{
+    animation: cw-slide-caption-1-right 3s ease-out 1 forwards;
   }
-  @keyframes slide-caption-1-right{
+  @keyframes cw-slide-caption-1-right{
     100%{ transform: translate(66.5rem)};
   }
-  .rotate-cake-1-front{
-    animation: slide-1-front 3s ease-out 1 forwards;
+  .cw-rotate-cake-1-front{
+    animation: cw-slide-1-front 3s ease-out 1 forwards;
   }
-  @keyframes slide-1-front{
+  @keyframes cw-slide-1-front{
     100%{ transform: translate(-3rem, 8rem)};
   }
-  .rotate-cake-caption-1-front{
-    animation: slide-cake-caption-1-front 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-1-front{
+    animation: cw-slide-cake-caption-1-front 3s ease-out 1 forwards;
   }
-  @keyframes slide-cake-caption-1-front{
+  @keyframes cw-slide-cake-caption-1-front{
     100%{ transform: translate(-33rem, 8rem)};
   }
-  .rotate-cake-1-left{
-    animation: slide-1-left 3s ease-out 1 forwards;
+  .cw-rotate-cake-1-left{
+    animation: cw-slide-1-left 3s ease-out 1 forwards;
   }
-  @keyframes slide-1-left{
+  @keyframes cw-slide-1-left{
     100%{ transform: translate(-3.5rem, -8rem)};
   }
-  .rotate-cake-caption-1-left{
-    animation: slide-cake-caption-1-left 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-1-left{
+    animation: cw-slide-cake-caption-1-left 3s ease-out 1 forwards;
   }
-  @keyframes slide-cake-caption-1-left{
+  @keyframes cw-slide-cake-caption-1-left{
     100%{ transform: translate(-33rem, -8rem)};
   }
   
-  .rotate-cake-2-right{
-    animation: slide-2-right 3s ease-out 1 forwards;
+  .cw-rotate-cake-2-right{
+    animation: cw-slide-2-right 3s ease-out 1 forwards;
   }
-  @keyframes slide-2-right{
+  @keyframes cw-slide-2-right{
     100%{ transform: translate(66.5rem)};
   }
-  .rotate-cake-2-front{
-    animation: slide-2-front 3s ease-out 1 forwards;
+  .cw-rotate-cake-2-front{
+    animation: cw-slide-2-front 3s ease-out 1 forwards;
   }
-  @keyframes slide-2-front{
+  @keyframes cw-slide-2-front{
     100%{ transform: translate(-33rem, 8rem)};
   }
-  .rotate-cake-2-left{
-    animation: slide-2-left 3s ease-out 1 forwards;
+  .cw-rotate-cake-2-left{
+    animation: cw-slide-2-left 3s ease-out 1 forwards;
   }
-  @keyframes slide-2-left{
+  @keyframes cw-slide-2-left{
     100%{ transform: translate(-33.5rem, -8rem)};
   }
 
-.rotate-cake-3-front{
-    animation: slide-3-front 3s ease-out 1 forwards;
+.cw-rotate-cake-3-front{
+    animation: cw-slide-3-front 3s ease-out 1 forwards;
   }
-  @keyframes slide-3-front{
+  @keyframes cw-slide-3-front{
     100%{ transform: translate(-63rem, 8rem)};
   }
-  .rotate-cake-caption-3-front{
-    animation: slide-cake-caption-3-front 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-3-front{
+    animation: cw-slide-cake-caption-3-front 3s ease-out 1 forwards;
   }
-  @keyframes slide-cake-caption-3-front{
+  @keyframes cw-slide-cake-caption-3-front{
     100%{ transform: translate(-33rem, 8rem)};
   }
-  .rotate-cake-3-left{
-    animation: slide-3-left 3s ease-out 1 forwards;
+  .cw-rotate-cake-3-left{
+    animation: cw-slide-3-left 3s ease-out 1 forwards;
   }
-  @keyframes slide-3-left{
+  @keyframes cw-slide-3-left{
     100%{ transform: translate(-63.5rem, -8rem)};
   }
-  .rotate-cake-caption-3-left{
-    animation: slide-cake-caption-3-left 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-3-left{
+    animation: cw-slide-cake-caption-3-left 3s ease-out 1 forwards;
   }
-  @keyframes slide-cake-caption-3-left{
+  @keyframes cw-slide-cake-caption-3-left{
     100%{ transform: translate(-33rem, -8rem)};
   }
-  .rotate-cake-3-right{
-    animation: slide-3-right 3s ease-out 1 forwards;
+  .cw-rotate-cake-3-right{
+    animation: cw-slide-3-right 3s ease-out 1 forwards;
   }
-  @keyframes slide-3-right{
+  @keyframes cw-slide-3-right{
     100%{ transform: translate(36.5rem)};
   }
-  .rotate-cake-caption-3-right{
-    animation: slide-caption-3-right 3s ease-out 1 forwards;
+  .cw-rotate-cake-caption-3-right{
+    animation: cw-slide-caption-3-right 3s ease-out 1 forwards;
   }
-  @keyframes slide-caption-3-right{
+  @keyframes cw-slide-caption-3-right{
     100%{ transform: translate(66rem)};
   }
